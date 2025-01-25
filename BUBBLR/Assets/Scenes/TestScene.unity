@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 39523103}
   - component: {fileID: 39523102}
   - component: {fileID: 39523100}
+  - component: {fileID: 39523104}
   m_Layer: 0
   m_Name: ThemeBubbleSpawner (3)
   m_TagString: Theme
@@ -393,6 +394,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &39523104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39523098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46d70fb1fafca244283441ca3e1c63a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wall: 0
+  Bubble: 1
+  WallForce: 2
+  BubbleForce: 0
+  rb: {fileID: 0}
+  WallSound: {fileID: 0}
+  BubbleSound: {fileID: 0}
 --- !u!1 &315020973
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +426,7 @@ GameObject:
   - component: {fileID: 315020978}
   - component: {fileID: 315020977}
   - component: {fileID: 315020975}
+  - component: {fileID: 315020979}
   m_Layer: 0
   m_Name: ThemeBubbleSpawner
   m_TagString: Theme
@@ -560,6 +581,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &315020979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315020973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46d70fb1fafca244283441ca3e1c63a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wall: 0
+  Bubble: 1
+  WallForce: 2
+  BubbleForce: 0
+  rb: {fileID: 0}
+  WallSound: {fileID: 0}
+  BubbleSound: {fileID: 0}
 --- !u!1 &441284148
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,7 +749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Wall: 1
   Bubble: 0
-  WallForce: 6
+  WallForce: 3
   BubbleForce: 0
   rb: {fileID: 0}
   WallSound: {fileID: 0}
@@ -727,6 +767,7 @@ GameObject:
   - component: {fileID: 522379915}
   - component: {fileID: 522379914}
   - component: {fileID: 522379912}
+  - component: {fileID: 522379916}
   m_Layer: 0
   m_Name: ThemeBubbleSpawner (1)
   m_TagString: Theme
@@ -881,6 +922,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &522379916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522379910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46d70fb1fafca244283441ca3e1c63a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wall: 0
+  Bubble: 1
+  WallForce: 2
+  BubbleForce: 0
+  rb: {fileID: 0}
+  WallSound: {fileID: 0}
+  BubbleSound: {fileID: 0}
 --- !u!1 &610648640
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,6 +989,7 @@ GameObject:
   - component: {fileID: 765949131}
   - component: {fileID: 765949130}
   - component: {fileID: 765949128}
+  - component: {fileID: 765949132}
   m_Layer: 0
   m_Name: ThemeBubbleSpawner (2)
   m_TagString: Theme
@@ -1083,6 +1144,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &765949132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765949126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46d70fb1fafca244283441ca3e1c63a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wall: 0
+  Bubble: 1
+  WallForce: 2
+  BubbleForce: 0
+  rb: {fileID: 0}
+  WallSound: {fileID: 0}
+  BubbleSound: {fileID: 0}
 --- !u!1 &987650947
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,7 +1312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Wall: 1
   Bubble: 0
-  WallForce: 6
+  WallForce: 3
   BubbleForce: 0
   rb: {fileID: 0}
   WallSound: {fileID: 0}
@@ -1488,7 +1568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Wall: 1
   Bubble: 0
-  WallForce: 6
+  WallForce: 3
   BubbleForce: 0
   rb: {fileID: 0}
   WallSound: {fileID: 0}
@@ -1814,7 +1894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Wall: 1
   Bubble: 0
-  WallForce: 6
+  WallForce: 3
   BubbleForce: 0
   rb: {fileID: 0}
   WallSound: {fileID: 0}
@@ -1901,8 +1981,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1865270476}
   - component: {fileID: 1865270477}
+  - component: {fileID: 1865270478}
+  - component: {fileID: 1865270479}
   m_Layer: 0
-  m_Name: GameController
+  m_Name: ImpulseController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1917,14 +1999,14 @@ Transform:
   m_GameObject: {fileID: 1865270474}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.46, y: -4.04, z: -0.10404559}
+  m_LocalPosition: {x: 6.07, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1865270477
-BoxCollider2D:
+--- !u!58 &1865270477
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1953,22 +2035,44 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 3, y: 3}
-  m_EdgeRadius: 0
+  m_Radius: 0.7
+--- !u!114 &1865270478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865270474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e536778c53ca64c9c3914819b6a4ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImpulseForce: 20
+--- !u!114 &1865270479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865270474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46d70fb1fafca244283441ca3e1c63a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wall: 0
+  Bubble: 0
+  WallForce: 0
+  BubbleForce: 0
+  rb: {fileID: 0}
+  WallSound: {fileID: 0}
+  BubbleSound: {fileID: 0}
 --- !u!1 &1972520650
 GameObject:
   m_ObjectHideFlags: 0
