@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MessageBubbleSpawner : MonoBehaviour
 {
-    public GameObject MessageBubblePrefab;
+    public GameObject[] MessageBubblePrefab;
     public Vector2 center;
     public Vector2 size;
     
@@ -40,8 +40,9 @@ public class MessageBubbleSpawner : MonoBehaviour
     {
         for(int i = 0; i < nBubbleToSpawn; i++)
         {
+        int randomIndex = Random.Range(0, MessageBubblePrefab.Length);
         Vector2 pos0 = new Vector2(Random.Range(-size.x/2, size.x/2), Random.Range(-size.y/2, size.y/2));
-        Instantiate(MessageBubblePrefab, pos0, Quaternion.identity);
+        Instantiate(MessageBubblePrefab[randomIndex], pos0, Quaternion.identity);
         }
     }
 

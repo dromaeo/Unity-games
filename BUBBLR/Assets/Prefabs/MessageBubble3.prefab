@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5090639592842451639}
   - component: {fileID: 2267024348563583633}
   m_Layer: 0
-  m_Name: MessageBubble
+  m_Name: MessageBubble3
   m_TagString: Bubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7072239904835409979, guid: 399b923fb9da4c94d93ffcc4fc8f2d55, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.29411766, g: 0.7294118, b: 0.29411766, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
   Wall: 0
   Bubble: 1
   WallForce: 0
-  BubbleForce: 0.75
+  BubbleForce: 0.25
   rb: {fileID: 7108454216016439722}
   WallSound: {fileID: 0}
   BubbleSound: {fileID: 0}
@@ -201,3 +201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScaleMin: 4
+  Theme1: 0
+  Theme2: 0
+  Theme3: 1
+  Theme4: 0
