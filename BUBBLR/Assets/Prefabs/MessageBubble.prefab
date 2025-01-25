@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3597689193578928443}
   - component: {fileID: 3404586419070191637}
   - component: {fileID: 5090639592842451639}
+  - component: {fileID: 2267024348563583633}
   m_Layer: 0
   m_Name: MessageBubble
   m_TagString: Bubble
@@ -183,7 +184,20 @@ MonoBehaviour:
   Wall: 0
   Bubble: 1
   WallForce: 0
-  BubbleForce: 1
+  BubbleForce: 0.75
   rb: {fileID: 7108454216016439722}
   WallSound: {fileID: 0}
   BubbleSound: {fileID: 0}
+--- !u!114 &2267024348563583633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8967770478916280297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 056e978fc2ba7394b9211c7ea5d5369d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScaleMin: 4
