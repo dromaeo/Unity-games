@@ -1,34 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class ImpulseClick : MonoBehaviour{
 
-    private Vector3 target;
+private Vector3 target;
 
-    public float ImpulseForce;
-    private Vector2 direction;
-    private float distance;
-    private float forceRate;
+public float ImpulseForce;
+private Vector2 direction;
+private float distance;
+private float forceRate;
 
-    void Start()
+void Start()
+{
+    target = transform.position;
+}
+
+void Update() 
+{
+    if (Input.GetMouseButton(0)) 
     {
-        target = transform.position;
+        this.GetComponent<CircleCollider2D>().enabled = true;
+        target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.position = Vector3.MoveTowards(transform.position, target, 10000 * Time.deltaTime);
     }
-
-    void Update() 
+    else
     {
-        if (Input.GetMouseButton(0)) 
-        {
-            this.GetComponent<CircleCollider2D>().enabled = true;
-            target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            transform.position = Vector3.MoveTowards(transform.position, target, 10000 * Time.deltaTime);
-        }
-        else
-        {
-            this.GetComponent<CircleCollider2D>().enabled = false;
-        }
+        this.GetComponent<CircleCollider2D>().enabled = false;
     }
+}
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -42,6 +41,3 @@ public class ImpulseClick : MonoBehaviour{
         }
     }  
 }
-
-    
-    
