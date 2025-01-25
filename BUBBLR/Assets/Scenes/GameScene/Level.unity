@@ -374,11 +374,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6455040a8d3dc24b9f0ba06c49cf108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Theme1: 1
+  Theme1: 0
   Theme2: 0
   Theme3: 0
   Theme4: 1
   life: 0
+  fascismMessage: 0
+  fascismMessageGoal: 3
   ScaleMin: 8
   ScaleMax: 16
   UpscaleTimer: 0
@@ -579,6 +581,8 @@ MonoBehaviour:
   Theme3: 0
   Theme4: 0
   life: 0
+  fascismMessage: 0
+  fascismMessageGoal: 0
   ScaleMin: 8
   ScaleMax: 16
   UpscaleTimer: 5
@@ -933,6 +937,8 @@ MonoBehaviour:
   Theme3: 0
   Theme4: 0
   life: 0
+  fascismMessage: 0
+  fascismMessageGoal: 0
   ScaleMin: 8
   ScaleMax: 16
   UpscaleTimer: 0
@@ -1168,6 +1174,8 @@ MonoBehaviour:
   Theme3: 1
   Theme4: 0
   life: 0
+  fascismMessage: 0
+  fascismMessageGoal: 0
   ScaleMin: 8
   ScaleMax: 16
   UpscaleTimer: 0
@@ -1426,6 +1434,8 @@ MonoBehaviour:
   Theme3: 0
   Theme4: 0
   life: 0
+  fascismMessage: 0
+  fascismMessageGoal: 0
   ScaleMin: 0
   ScaleMax: 0
   UpscaleTimer: 0

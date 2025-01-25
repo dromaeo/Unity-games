@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ThemeBubble : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class ThemeBubble : MonoBehaviour
     public bool Theme4;    
 
     public int life;
+    public int fascismMessage;
+    public int fascismMessageGoal;
     
     public float ScaleMin;
     public float ScaleMax;
@@ -24,6 +27,7 @@ public class ThemeBubble : MonoBehaviour
     {
         Scaling = ((ScaleMax - ScaleMin)/16);
         life = 3;
+        fascismMessage = 0;
     }
 
     void Update()
@@ -31,6 +35,13 @@ public class ThemeBubble : MonoBehaviour
         if(life == 0)
         {
             Debug.Log("GameOver!");
+            SceneManager.LoadScene("GameOver");
+        }
+
+        if(Theme4 == true && fascismMessage == fascismMessageGoal)
+        {
+            Debug.Log("Win!");
+            SceneManager.LoadScene("Win");
         }
     }
 
@@ -65,6 +76,7 @@ public class ThemeBubble : MonoBehaviour
             else
             {
             Debug.Log("Win!");
+            SceneManager.LoadScene("Win");
             Destroy(BubbleToDestroy);
             }
         }
@@ -101,6 +113,7 @@ public class ThemeBubble : MonoBehaviour
             else
             {
             Debug.Log("Win!");
+            SceneManager.LoadScene("Win");
             Destroy(BubbleToDestroy); 
             }
         }
@@ -137,6 +150,7 @@ public class ThemeBubble : MonoBehaviour
             else
             {
             Debug.Log("Win!");
+            SceneManager.LoadScene("Win");
             Destroy(BubbleToDestroy);
             }
         }
@@ -173,12 +187,18 @@ public class ThemeBubble : MonoBehaviour
             else
             {
             Debug.Log("Win!");
+            SceneManager.LoadScene("Win");
             Destroy(BubbleToDestroy);
-            } 
+            }
         }
-        else if(Theme4 == true && BubbleToDestroy.GetComponent<MessageBubble>().Theme4 == false)
+        else if(Theme4 == true && BubbleToDestroy.GetComponent<MessageBubble>().Theme4 == false && BubbleToDestroy.GetComponent<MessageBubble>().Theme2 == false)
         {
             life = life -1;
+            Destroy(BubbleToDestroy);
+        }
+        else if(Theme4 == true && BubbleToDestroy.GetComponent<MessageBubble>().Theme4 == false && BubbleToDestroy.GetComponent<MessageBubble>().Theme2 == true)
+        {
+            fascismMessage = fascismMessage +1;
             Destroy(BubbleToDestroy);
         }
     }

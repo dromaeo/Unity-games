@@ -24,7 +24,7 @@ public class MessageBubbleSpawner : MonoBehaviour
 
     void Update()
     {
-       if(scene == "TestScene")
+       if(scene == "Level" || scene == "TestScene")
        {
         nBubble = GameObject.FindGameObjectsWithTag("Bubble").Length;
         nBubbleToSpawn = nBubbleMax - nBubble;
