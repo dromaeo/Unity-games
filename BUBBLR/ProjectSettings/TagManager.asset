@@ -7,6 +7,7 @@ TagManager:
   - Bubble
   - Theme
   - ImpulseController
+  - LevelLoader
   layers:
   - Default
   - TransparentFX

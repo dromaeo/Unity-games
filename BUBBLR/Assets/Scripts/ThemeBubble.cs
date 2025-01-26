@@ -22,6 +22,7 @@ public class ThemeBubble : MonoBehaviour
     public float UpscaleTimer;
     public Animation BubbleBurst;
     public GameObject BubbleToDestroy;
+    public LevelLoader LevelLoaderScript;
 
     void Start()
     {
@@ -35,13 +36,13 @@ public class ThemeBubble : MonoBehaviour
         if(life == 0)
         {
             Debug.Log("GameOver!");
-            SceneManager.LoadScene("GameOver");
+            LevelLoaderScript.GameOverSceneBool = true;
         }
 
         if(Theme4 == true && fascismMessage == fascismMessageGoal)
         {
             Debug.Log("Win!");
-            SceneManager.LoadScene("Win");
+
         }
     }
 
@@ -76,7 +77,7 @@ public class ThemeBubble : MonoBehaviour
             else
             {
             Debug.Log("Win!");
-            SceneManager.LoadScene("Win");
+            LevelLoaderScript.WinSceneBool = true;
             Destroy(BubbleToDestroy);
             }
         }
@@ -113,7 +114,7 @@ public class ThemeBubble : MonoBehaviour
             else
             {
             Debug.Log("Win!");
-            SceneManager.LoadScene("Win");
+            LevelLoaderScript.WinSceneBool = true;
             Destroy(BubbleToDestroy); 
             }
         }
@@ -150,7 +151,7 @@ public class ThemeBubble : MonoBehaviour
             else
             {
             Debug.Log("Win!");
-            SceneManager.LoadScene("Win");
+            LevelLoaderScript.WinSceneBool = true;
             Destroy(BubbleToDestroy);
             }
         }
@@ -187,7 +188,7 @@ public class ThemeBubble : MonoBehaviour
             else
             {
             Debug.Log("Win!");
-            SceneManager.LoadScene("Win");
+            LevelLoaderScript.WinSceneBool = true;
             Destroy(BubbleToDestroy);
             }
         }
